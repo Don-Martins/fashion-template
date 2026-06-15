@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-gold: #C5A059;
+  --color-brand-black: #1A1A1A;
+  --color-brand-offwhite: #FDFCFB;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Global Aesthetics for Clean Minimalism Theme */
+:root {
+  --brand-gold: #C5A059;
+  --brand-black: #1A1A1A;
+  --brand-offwhite: #FDFCFB;
+}
+
+body {
+  background-color: #FDFCFB !important;
+  color: #1A1A1A !important;
+  font-family: var(--font-sans);
+}
+
+/* Layout Page Wrapper */
+.bg-stone-950,
+div.bg-stone-950 {
+  background-color: #FDFCFB !important;
+  color: #1A1A1A !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFCFB;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 26, 26, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.4);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(197, 160, 89, 0.2) !important;
+  color: #1A1A1A !important;
+}
+
+/* Header Navbar Styling Overrides */
+header.bg-stone-950\/90,
+header {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.06) !important;
+  color: #1A1A1A !important;
+}
+
+/* General clean minimalist text colors */
+.text-stone-100 { color: #1A1A1A !important; }
+.text-stone-200 { color: #2D2D2D !important; }
+.text-stone-300 { color: #4A4A4A !important; }
+.text-stone-400 { color: #5C5C5C !important; }
+.text-stone-500 { color: #7A7A7A !important; }
+.text-stone-600 { color: #919191 !important; }
+
+/* Anchor or specific text state elements */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Subtle Thin Luxury Borders */
+.border-stone-800,
+.border-stone-850,
+.border-stone-900,
+.border-stone-800\/50,
+.border-stone-855,
+.border-stone-700,
+.border-stone-800\/60,
+.border-stone-850\/60 {
+  border-color: rgba(26, 26, 26, 0.08) !important;
+}
+
+/* Interactive brand alignments */
+.text-amber-500,
+.text-amber-400,
+.group-hover\:text-amber-400:hover,
+.hover\:text-amber-500:hover {
+  color: #C5A059 !important;
+}
+
+.bg-amber-500,
+.bg-amber-400 {
+  background-color: #C5A059 !important;
+  color: #FFFFFF !important;
+}
+
+.border-amber-500 {
+  border-color: #C5A059 !important;
+}
+
+.bg-amber-500\/10 {
+  background-color: rgba(197, 160, 89, 0.06) !important;
+}
+
+/* Layout/Card adjustments */
+.bg-stone-900,
+div.bg-stone-900 {
+  background-color: #FFFFFF !important;
+  border: 1px solid rgba(26, 26, 26, 0.05) !important;
+}
+
+.bg-stone-950\/40,
+.bg-stone-950\/60 {
+  background-color: rgba(26, 26, 26, 0.01) !important;
+}
+
+/* Hover highlights for collections */
+.group.relative.h-64.border.border-stone-850 {
+  border-color: rgba(26, 26, 26, 0.06) !important;
+  background-color: #FDFCFB !important;
+}
+
+.group.relative.h-64.border.border-stone-850 img {
+  opacity: 0.82 !important;
+}
+.group.relative.h-64.border.border-stone-850:hover img {
+  opacity: 0.95 !important;
+}
+
+/* Modals overlays background */
+.bg-stone-950\/80 {
+  background-color: rgba(26, 26, 26, 0.4) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Modal bodies custom */
+.relative.bg-stone-900.border.border-stone-800 {
+  background-color: #FFFFFF !important;
+  color: #1A1A1A !important;
+  border: 1px solid rgba(26, 26, 26, 0.06) !important;
+  box-shadow: 0 25px 50px -12px rgba(26, 26, 26, 0.1) !important;
+}
+
+/* Side Drawers styles */
+.bg-stone-900\/95 {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  color: #1A1A1A !important;
+  border-left: 1px solid rgba(26, 26, 26, 0.06) !important;
+}
+
+/* Forms layout */
+input, select, textarea {
+  background-color: #FFFFFF !important;
+  color: #1A1A1A !important;
+  border: 1px solid rgba(26, 26, 26, 0.12) !important;
+}
+
+/* Admin Dashboard custom alignments */
+.bg-stone-900\/50 {
+  background-color: #FFFFFF !important;
+  border: 1px solid rgba(26, 26, 26, 0.05) !important;
+}
+.bg-stone-900\/20 {
+  background-color: rgba(26, 26, 26, 0.02) !important;
+}
+.bg-stone-900\/30 {
+  background-color: rgba(26, 26, 26, 0.03) !important;
+}
+.bg-stone-950\/60 {
+  background-color: rgba(26, 26, 26, 0.02) !important;
+}

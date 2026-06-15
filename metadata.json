@@ -1,0 +1,6 @@
+{
+  "name": "Luxury Fashion E-Commerce",
+  "description": "An interactive, responsive, and functional luxury fashion e-commerce mockup with an admin analytics & configuration dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
